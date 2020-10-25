@@ -1,0 +1,10 @@
+[Unit]
+Description=salt-master-service
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/salt-master
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

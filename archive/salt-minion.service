@@ -1,0 +1,10 @@
+[Unit]
+Description=salt-minion-service
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/salt-minion
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
